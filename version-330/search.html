@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索影片-日韩电影精选</title>
+  <meta name="description" content="推荐日韩电影栏目精选多类型日韩影片，包含热门新片、经典影片和高分内容。 支持片名、地区、年份、类型与关键词搜索。">
+  <meta name="keywords" content="推荐日韩电影,日韩电影,精选电影,电影合集,高清电影,在线电影,电影推荐,电影搜索,在线搜索">
+  <link rel="stylesheet" href="./assets/original.css">
+  <link rel="stylesheet" href="./assets/site.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="./index.html" aria-label="日韩电影精选">
+      <span class="site-logo__mark">映</span>
+      <span class="site-logo__text">
+        <strong>日韩电影精选</strong>
+        <small>精选电影合集 · 高清免费在线观看</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./ranking.html">排行榜</a>
+        <a class="nav-link" href="./all-movies.html">全部影片</a>
+        <a class="nav-link is-active" href="./search.html" aria-current="page">搜索</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片、地区、类型" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-menu-button" type="button" aria-label="打开菜单" data-mobile-menu-button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <form class="mobile-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="mobile-nav" aria-label="移动端导航">
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./ranking.html">排行榜</a>
+        <a class="nav-link" href="./all-movies.html">全部影片</a>
+        <a class="nav-link is-active" href="./search.html" aria-current="page">搜索</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero page-hero--search">
+  <div class="page-hero__inner">
+    <span class="section-kicker">Search</span>
+    <h1>搜索影片</h1>
+    <p>输入片名、地区、类型、年份或关键词，快速查找想看的精选电影。</p>
+    <form class="page-search" action="./search.html" method="get" data-search-page-form>
+      <input type="search" name="q" placeholder="例如：日本、悬疑、爱情、2026">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+<section class="section-block">
+  <div class="search-summary" data-search-summary>请输入关键词开始搜索。</div>
+  <div class="movie-grid" data-search-results></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <a class="site-logo site-logo--footer" href="./index.html">
+        <span class="site-logo__mark">映</span>
+        <span class="site-logo__text">
+          <strong>日韩电影精选</strong>
+          <small>精选电影合集 · 高清免费在线观看</small>
+        </span>
+      </a>
+      <p>推荐日韩电影栏目精选多类型日韩影片，包含热门新片、经典影片和高分内容。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./all-movies.html">全部影片</a>
+      <a href="./search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/site.js" defer></script>
+<script src="./assets/search-data.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
